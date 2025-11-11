@@ -1,0 +1,62 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #001f3f;
+  color: #f8f9fa;
+}
+
+/* Navbar */
+.navbar-custom {
+  background-color: #001530;
+  padding: 12px 0;
+}
+
+.navbar-custom .nav-link {
+  color: #d8efff !important;
+  font-weight: 400;
+}
+
+.navbar-custom .nav-link:hover {
+  color: #00d4ff !important;
+}
+
+/* Hero Section */
+.hero-section {
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+              url("https://images.unsplash.com/photo-1554284126-aa88f22d8b74?auto=format&fit=crop&w=1500&q=80")
+              center/cover no-repeat;
+  height: 100vh;
+  color: #fff;
+  text-align: center;
+  padding-top: 80px;
+}
+
+.hero-title {
+  font-size: 3rem;
+  letter-spacing: 1px;
+}
+
+.hero-subtext {
+  font-size: 1.2rem;
+  margin-top: 10px;
+  color: #cce7ff;
+}
+
+/* Button Accent */
+.btn-accent {
+  background-color: #00d4ff;
+  border: none;
+  color: #001f3f;
+  font-weight: 600;
+  padding: 10px 25px;
+  border-radius: 6px;
+}
+
+.btn-accent:hover {
+  background-color: #00a6c7;
+  color: #ffffff;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero-title { font-size: 2.2rem; }
+}

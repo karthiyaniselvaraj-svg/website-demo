@@ -1,0 +1,163 @@
+/* ======== GENERAL RESET ======== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #0a0a2a, #000033);
+  color: white;
+  overflow-x: hidden;
+}
+
+/* ======== NAVBAR ======== */
+.navbar {
+  background: rgba(0, 0, 51, 0.8);
+  padding: 0.8rem 0;
+  box-shadow: 0 3px 15px rgba(25, 25, 112, 0.4);
+  backdrop-filter: blur(6px);
+}
+
+.navbar-brand span {
+  color: #00bfff;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+.navbar-nav .nav-link {
+  color: white !important;
+  margin-left: 1rem;
+  transition: 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+  color: #00bfff !important;
+}
+
+/* ======== NAVBAR TOGGLER ======== */
+.navbar-toggler {
+  border-color: rgba(255, 255, 255, 0.6);
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/* ======== LOGO ======== */
+.logo {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.logo:hover {
+  transform: scale(1.1);
+}
+
+/* ======== SPARKLE TEXT ======== */
+.sparkle-text {
+  position: relative;
+  display: inline-block;
+  background: linear-gradient(90deg, #1e90ff, #00bfff, #87cefa, #1e90ff);
+  background-size: 400%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: sparkle 5s linear infinite;
+}
+
+@keyframes sparkle {
+  0% { background-position: 0%; }
+  100% { background-position: 400%; }
+}
+
+/* ======== TRAINER CARDS ======== */
+.card {
+  border: none;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(30, 144, 255, 0.4);
+}
+
+.card-body {
+  background-color: #0a0a2a;
+  color: white;
+}
+
+.card-title {
+  color: #00bfff;
+  font-weight: bold;
+}
+
+/* ======== BUTTONS ======== */
+.btn-unique {
+  background: linear-gradient(90deg, #1e90ff, #00008b);
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  padding: 12px 30px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.btn-unique:hover {
+  background: linear-gradient(90deg, #00008b, #1e90ff);
+  transform: scale(1.05);
+}
+
+/* ======== FOOTER ======== */
+.footer {
+  background: linear-gradient(90deg, #000033, #0a0a2a);
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+
+.footer h5 {
+  color: #00bfff;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.footer p, .footer a {
+  color: #ddd;
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+.footer a:hover {
+  color: #00bfff;
+}
+
+.footer .bi {
+  color: #00bfff;
+}
+
+.footer-bottom {
+  border-top: 1px solid #333;
+  padding-top: 15px;
+  font-size: 0.85rem;
+  color: #aaa;
+  margin-top: 20px;
+  text-align: center;
+}
+
+/* ======== RESPONSIVE ======== */
+@media (max-width: 767px) {
+  .footer .col-md-4 {
+    text-align: center;
+  }
+
+  .navbar-nav .nav-link {
+    margin-left: 0;
+    margin-bottom: 0.5rem;
+  }
+}

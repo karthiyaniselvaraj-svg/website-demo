@@ -1,0 +1,104 @@
+/* ====== GLOBAL THEME COLORS ====== */
+:root {
+  --navy-dark: #001f3f;
+  --navy-mid: #003d73;
+  --cyan-accent: #00d4ff;
+  --white: #ffffff;
+}
+
+/* ===== NAVBAR ===== */
+.navbar {
+  background: var(--navy-dark) !important;
+}
+.navbar .nav-link {
+  color: var(--white) !important;
+  transition: 0.3s;
+}
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+  color: var(--cyan-accent) !important;
+  text-shadow: 0 0 6px var(--cyan-accent);
+}
+.navbar-brand .brand-title {
+  color: var(--white);
+  font-weight: 600;
+}
+
+/* ===== LOGO ===== */
+.logo {
+  width: 70px;               /* Set a fixed width */
+  height: 70px;              /* Set a fixed height */
+  border-radius: 50%;        /* Make it circular */
+  object-fit: cover;         /* Cover the area without distortion */
+  border: 2px solid var(--cyan-accent); /* Cyan border for accent */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect */
+.logo:hover {
+  transform: scale(1.1); /* Slight zoom on hover */
+  box-shadow: 0 0 12px var(--cyan-accent); /* Glow effect */
+}
+
+
+/* ===== SPARKLE TEXT EFFECT ===== */
+.sparkle-text {
+  color: var(--cyan-accent);
+  text-shadow: 0px 0px 8px var(--cyan-accent);
+}
+
+/* ===== REGISTER FORM BOX ===== */
+form {
+  background: var(--navy-mid) !important;
+  border: 1px solid var(--cyan-accent);
+  box-shadow: 0 0 15px rgba(0, 212, 255, 0.4);
+}
+.form-control,
+.form-select {
+  background: #0a223d;
+  border: 1px solid var(--cyan-accent);
+  color: var(--white);
+}
+.form-control:focus,
+.form-select:focus {
+  box-shadow: 0 0 8px var(--cyan-accent);
+  border-color: var(--cyan-accent);
+}
+label {
+  color: var(--white);
+}
+
+/* ===== BUTTON ===== */
+.btn-unique {
+  background: var(--cyan-accent);
+  color: var(--navy-dark);
+  font-weight: bold;
+  transition: 0.3s;
+}
+.btn-unique:hover {
+  background: var(--white);
+  color: var(--navy-dark);
+}
+
+/* ===== MODAL ===== */
+.modal-content {
+  background: var(--navy-mid) !important;
+  border: 1px solid var(--cyan-accent);
+  box-shadow: 0 0 12px var(--cyan-accent);
+}
+
+/* ===== FOOTER ===== */
+.footer {
+  background: var(--navy-dark);
+}
+.footer-icon {
+  color: var(--cyan-accent);
+}
+.footer-link {
+  color: var(--white);
+  text-decoration: none;
+}
+.footer-link:hover {
+  color: var(--cyan-accent);
+  text-shadow: 0 0 6px var(--cyan-accent);
+}
